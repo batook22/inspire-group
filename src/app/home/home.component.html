@@ -1,0 +1,120 @@
+<div class="banner">
+    <div class="container grid">
+        <div class="row">
+            <div class="col-md-6 banner-text py-5 my-5">
+                <h1>Chercher les entreprises les plus responsables</h1>
+                <p>Sautons le pas pour que chaque voix compte quand il s’agit de sauver ce que nous avons de plus
+                    précieux</p>
+                <img class="play mr-2" src="assets/img/play.jpg" alt=""> LANCER LA VIDEO
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-5">
+    <div class="bg-types">
+        <div class="grid py-5 mb-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-md-5">
+                    <div class="card transparent">
+                        <div class="card-body">
+                            <h5 class="card-title">PARTICULIERS</h5>
+                            <h6 class="card-subtitle my-3">Contribuez à améliorer l'impact des entreprises
+                            </h6>
+                            <p class="card-text">Les principes de la norme ISO 26000 établissent la référence mondiale
+                                en matière de développement durable. Pourtant, ils sont impossibles à estimer sans le
+                                retour de ses parties prenantes. Nos solutions d’audits RSE pour toutes les tailles
+                                d’entreprises permettent d’évaluer la performance de ces critères</p>
+                            <button class="btn btn-pink my-3">Inscription gratuite</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">PROFESSIONNELS</h5>
+                            <h6 class="card-subtitle my-3">Contribuez à améliorer l'impact des entreprises
+                            </h6>
+                            <p class="card-text">Les principes de la norme ISO 26000 établissent la référence mondiale
+                                en matière de développement durable. Pourtant, ils sont impossibles à estimer sans le
+                                retour de ses parties prenantes. Nos solutions d’audits RSE pour toutes les tailles
+                                d’entreprises permettent d’évaluer la performance de ces critères</p>
+                            <button class="btn btn-pink my-3">Je découvre les audits RSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-5 py-5"></div>
+    </div>
+</div>
+<div class="bg-sky-blue">
+    <div class="text-center py-5">
+        <h2 class="text-primary">Derniers avis déposés</h2>
+        <span class="text-gray">Derniers avis déposés par des utilisateurs inscrits sur la plateforme ou publiés en
+            ligne suite à un audit
+            RSE</span>
+    </div>
+
+    <div class="container-fluid  ">
+        <div #widgetsContent class="row flex-row flex-nowrap overflow-auto scrollbar">
+            <div *ngFor = "let x of [0,1,2,3] , let i = index" class="col-12 col-sm-6 col-lg-4">
+                <div class="card card-block">
+                    <div class="card-body">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="p-2 col-3">
+                                <img src='{{"assets/img/logo-" + i + ".jpg"}}' alt="">
+                            </div>
+                            <div class="pl-2 col-8  my-auto">
+                                <h6>Productboard</h6>
+                                <span class="text-gray text-smaller">ZA - 124 rue de la Prairie, 73420, VOGLANS,
+                                    France</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="grid">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="d-flex flex-row ">
+                                        <div *ngFor = "let x of [0,1,2]" class="pr-1">
+                                            <img src="assets/img/star-selected.jpg" alt="">
+                                        </div>
+                                        <div *ngFor = "let x of [0,1]" class="pr-1">
+                                            <img src="assets/img/star-not-selected.jpg" alt="">
+                                        </div>
+                                        <div class="pl-2 my-auto">
+                                            3.5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h6 class="card-subtitle my-3">Contributed in the lorem ipsum
+                        </h6>
+                        <p class="card-text">J'ai été très déçu, suite aux événements et échanges avec certaines
+                            personnes, j'ai été prise par le geiq. Mais..</p>
+                        <div class="d-flex flex-row">
+                            <div class="p-2">
+                                <img src='{{"assets/img/user-img-" + i + ".jpg"}}' alt="">
+                            </div>
+                            <div class="pl-2 my-auto">
+                                <span class="text-gray text-smaller">User#1454182</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center py-2">
+            <div class="p-4">
+                <button class="btn dott active" (click)="scrollLeft()"></button>
+            </div>
+            <div class="p-4">
+                <button class="btn dott"></button>
+            </div>
+            <div class="p-4">
+                <button class="btn dott" (click)="scrollRight()"></button>
+            </div>
+        </div>
+    </div>
+</div>

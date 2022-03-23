@@ -1,0 +1,14 @@
+.social {
+    padding-left: 0px;
+}
+
+.nav-link {
+    color: var(--inspire-color-white);
+    padding: 0px;
+    opacity: 0.8;
+    font-size: smaller;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}

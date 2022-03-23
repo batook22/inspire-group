@@ -1,0 +1,19 @@
+.btn-nav {
+    margin: auto 0.6rem auto 0.6rem;
+}
+
+.btn-active {
+    background-color: rgba(232, 97, 97, 0.1);
+    color: #e86161;
+}
+
+.navbar {
+    background-color: var(--inspire-color-white);
+}
+
+.burger {
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}

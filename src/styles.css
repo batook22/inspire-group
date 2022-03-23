@@ -1,0 +1,112 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+:root {
+
+    /* Colors: */
+    --inspire-color-sky-blue: #F5F8FB;
+    --inspire-color-primary: #153754;
+    --inspire-color-eeebeb40: #EEEBEB40;
+    --inspire-color-white: #FFFFFF;
+    --inspire-color-pink: #E86161;
+    --inspire-color-gray: #6F7B84;
+    --inspire-color-footer: #123653;
+    /* Card colors */
+    --inspire-color-text: #404950;
+    --inspire-color-subtitle: #0C1D3B; 
+
+    /* text colors */
+    --inspire-color-text-primary: #0C263B;
+
+    }
+
+body{
+    font-family: 'Heebo', sans-serif;
+    font-size: smaller;
+}
+
+/* Buttons */
+
+.btn {
+    border-radius: 19px;
+    color: var(--inspire-color-primary);
+    font-size: smaller;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgba(17, 44, 67, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--inspire-color-primary);
+    color: var(--inspire-color-white) !important;
+
+}
+
+.btn-primary:hover {
+    color: var(--inspire-color-white);
+    background-color: #112c43;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active , .btn-primary:not(:hover) {
+    color: var(--inspire-color-white);
+    background-color: var(--inspire-color-primary);
+}
+
+.btn-pink , .btn-pink:hover {
+    background-color: var(--inspire-color-pink);
+    color: var(--inspire-color-white) !important;
+}
+
+.btn.dott {
+    background-color: black;
+    opacity: 0.25;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.btn-social {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Card */
+
+.card-title {
+    color: var(--inspire-color-pink)
+}
+
+.card-subtitle {
+    color: var(--inspire-color-subtitle);
+}
+
+.card-text {
+    color: var(--inspire-color-text);
+}
+
+/* background */
+
+.bg-sky-blue {
+    background-color: var(--inspire-color-sky-blue);
+}
+
+.bg-footer {
+    background-color: var(--inspire-color-footer);
+    color: var(--inspire-color-white);
+}
+
+.bg-white {
+    background-color: var(--inspire-color-white);
+}
+
+/* text colors */
+
+.text-gray {
+    color: var(--inspire-color-gray)
+}
+
+.text-primary {
+    color: var(--inspire-color-text-primary) !important;
+}

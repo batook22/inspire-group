@@ -1,0 +1,29 @@
+.banner {
+    background-image: url("../../assets/img/banner.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner-text {
+    color: var(--inspire-color-white);
+}
+
+.play {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bg-types {
+    background-image: url("../../assets/img/bg-types.jpg");
+    background-position: bottom;
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}

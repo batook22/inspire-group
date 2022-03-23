@@ -1,0 +1,77 @@
+<nav class="navbar sticky-top navbar-expand-lg ">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="assets/img/logo.png" alt="">
+    </a>
+    <div class="collapse navbar-collapse ml-2" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <button class="btn btn-nav">
+            Noter
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-nav btn-active">
+            Audit RSE
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-nav">
+            Devenir pro
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-nav">
+            Contact
+          </button>
+        </li>
+      </ul>
+      <div class="ml-auto">
+        <button class="btn btn-nav"><img class="mr-2" src="assets/img/icon-language.png" alt="">FR</button>
+        <button class="btn btn-nav">Connexion</button>
+        <button class="btn btn-primary btn-nav">Inscription</button>
+      </div>
+
+    </div>
+    <div class="d-block d-lg-none">
+      <div (click)="burger()">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="sticky-top navbar-nav my-5" [ngClass]="{'d-none': clicked == false, 'd-block' : clicked == true }">
+  <div class="bg-white d-flex flex-column text-center">
+    <div class="p-2">
+      <button class="btn btn-block">
+        Noter
+      </button>
+    </div>
+    <div class="p-2">
+      <button class="btn btn-block btn-active">
+        Audit RSE
+      </button>
+    </div>
+    <div class="p-2">
+      <button class="btn btn-block">
+        Devenir pro
+      </button>
+    </div>
+    <div class="p-2">
+      <button class="btn btn-block">
+        Contact
+      </button>
+    </div>
+    <div class="p-2">
+      <button class="btn btn-block"><img class="mr-2" src="assets/img/icon-language.png" alt="">FR</button>
+    </div>
+    <div class="p-2">
+      <button class="btn btn-block">Connexion</button>
+    </div>
+    <div class="p-2">
+      <button class="btn btn-block btn-primary">Inscription</button>
+    </div>
+  </div>
+</div>
